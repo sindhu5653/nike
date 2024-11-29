@@ -1,157 +1,120 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
-}
-.nav1{
-    background-color: #F5F5F5;
-}
-.nav1-div{
-    display: flex;
-    justify-content: space-between;
-    width: 92vw;
+/* List-1 Table Section */
+.list-1 {
+    width: 92vw; /* Default width */
     margin: auto;
-    padding: 7px;
-}
-.right-nav1-div{
-    display: flex;
-    gap: 10px;
-    font-size: 12px;
-    font-weight: 550;
-}
-.nav2-div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 92vw;
-    margin: auto;
-    padding: 7px;
-}
-.right-nav2-div{
-    display: flex;
-    gap: 20px;
-}
-.right-nav2-div input{
-    border: none;
-    background-color: #F5F5F5;
-    border-radius: 20px;
-    height: 30px;
-}
-.middle-nav2-div{
-    display: flex;
-    gap: 30px;
-    font-weight: 550;
-}
-.bar-1{
-    background-color: #F5F5F5;
-    text-align: center;
-}
-.bar-2{
-    text-align: center;
-    width: 64vw;
-    margin: auto;
-    background-color: aqua;
-}
-.bar-2 button{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 20px;
-}
-/* .bar-3{
-    text-align: center;
-    width: 990px;
-    margin: auto;
-    background-color: aqua;
-}
-.bar-3 button{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 20px;
-} */
-.post-1{
-    width: 92vw;
-    margin: auto;
-}
-.post-1 img{
-    width: 92vw;
-}
-.section-1{
-    width: 92vw;
-    margin: auto;
-}
-.s1-main-card{
-    display: flex;
-    gap: 10px;
-    overflow: scroll;
-}
-.s2-main-card{
-    display: flex;
-    gap: 15px;
-    overflow: scroll;
-}
-.s2-text{
-    padding-left: 60px;
-}
-.section-4{
-    padding-left: 60px;
-}
-.list-1{
-    width: 55vw;
-    margin: auto;
-}
-.list-1 table{
-    text-align: left;
-}
-.list-1 table td,.list-1 table th{
-    padding: 10px 40px;
-}
-.list-2{
-    display: flex;
-    justify-content: space-between;
-    width: 92vw;
-    margin: auto;
-}
-.table-2{
-    text-align: left;
-}
-.table-2 td{
-    padding-right: 200px;
-}
-.table-2 td,.table-2 th{
-    padding-bottom: 10px;
-}
-footer{
-    width: 92vw;
-    margin: auto;
-    display: flex;
-    gap: 30px;
-    font-size: 14px;
-    color: rgb(73, 72, 72);
+    overflow-x: auto; /* Enable horizontal scroll for small screens */
 }
 
-.container{
+.list-1 table {
+    width: 100%; /* Full width for table */
+    border-collapse: collapse; /* Clean layout */
+    text-align: left;
+}
+
+.list-1 table th,
+.list-1 table td {
+    padding: 10px 20px; /* Spacing within cells */
+    font-size: 14px;
+}
+
+/* Responsive Adjustments for List-1 */
+@media (max-width: 768px) {
+    .list-1 table th,
+    .list-1 table td {
+        padding: 8px 10px; /* Reduced padding */
+        font-size: 12px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .list-1 table th,
+    .list-1 table td {
+        font-size: 10px; /* Further reduced font size */
+        padding: 5px; /* Minimal padding */
+    }
+}
+
+/* List-2 Table Section */
+.list-2 {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 92vw;
     margin: auto;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 15px; /* Add space between items */
 }
-.con-left{
-    width: 240px;
+
+.table-2 {
+    width: 100%; /* Ensure table spans full width */
+    border-collapse: collapse;
+    text-align: left;
 }
-.con-left div{
-    padding-right: 80px;
-    padding-bottom: 18px;
+
+.table-2 th,
+.table-2 td {
+    padding: 10px 20px;
+    font-size: 14px;
 }
-.con-right{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+
+/* Responsive Adjustments for List-2 */
+@media (max-width: 768px) {
+    .list-2 {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px;
+    }
+
+    .table-2 th,
+    .table-2 td {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-2 th,
+    .table-2 td {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .list-2 img {
+        width: 16px; /* Smaller icon */
+        height: 16px;
+    }
+}
+
+/* Footer Section */
+footer {
+    width: 92vw;
     margin: auto;
-}
-.shoe-bar{
-    display: flex; 
-    width: 92vw; 
-    margin: auto;
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Enable wrapping for small screens */
+    gap: 10px; /* Add spacing between items */
+    font-size: 14px;
+    color: rgb(73, 72, 72);
+    text-align: center; /* Center-align for smaller screens */
+}
+
+footer span {
+    padding: 5px;
+}
+
+/* Responsive Adjustments for Footer */
+@media (max-width: 768px) {
+    footer {
+        font-size: 12px; /* Smaller font size */
+    }
+
+    footer span {
+        display: block; /* Stack items vertically */
+        width: 100%; /* Ensure full-width span */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 10px;
+    }
 }
